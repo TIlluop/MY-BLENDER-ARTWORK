@@ -1,0 +1,158 @@
+<html>
+<head>
+    <title>MY BLENDER ARTWORK</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
+    <meta name ="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@1,100&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<link rel = "icon" href = "fevicon12.png">
+</head>
+<body>
+<section id ="banner">
+     <div class="banner-text">
+     <h1>Welcome To</h1>
+     <p>My Blender Artwork</p>
+     <div class="banner-btn">
+         <a href="#"><span></span> ARTWORK</a>
+         <a href="#"><span></span>Youtube</a>
+     </div>
+</section>
+<div id="sideNav">
+     <nav>
+         <ul>
+             <li><a href="#banner">HOME</a></li>
+             <li><a href="#feature">Info About My Artwork</a></li>
+             <li><a href="#youtube">MY YOUTUBE CHANNEL</a></li>
+             <li><a href="#artwork">MY ARTWORK</a></li>
+             <li><a href="#footer">CONNECT WITH ME</a></li>
+         </ul>
+     </nav>
+</div>
+<div id="menuBtn">
+    <img src="menu.png" id="menu">
+</div>
+
+<!--Features-->
+
+<section id="feature">
+<div class="title-text">
+<p>FEATURES</p>
+<h1>Info About My Artwork</h1>
+</div>
+<div class="feature-box">
+    <div class="features">
+        <h1>Software Used In Modeling</h1>
+        <div class="features-desc">
+            <div class="feature-icon">
+                <div class='feature-text'></div>
+                <p>Blender is a free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, motion graphics, interactive 3D applications, virtual reality, and computer games.</p>
+            </div>
+        </div>
+        <div class="features-img">
+            <img src='blender3.png'>
+       </div>
+</div>
+
+</section>
+<!---Youtube-->
+<section id="youtube">
+<div class="title-text">
+<p>My Youtube Channel</p>
+<h1>GAMERS PARADISE</h1>
+</div>
+<div class="feature-box">
+    <div class="features">
+        <h1>About My Channel</h1>
+        <div class="features-desc">
+            <div class="feature-icon">
+                <p>Welcome to my youtube channel, here I make some Fun Gaming Video, montages etc. I share some awesome clips playing with my friends and at a same time I also try to improve my skills..</p>
+            </div>
+        </div>
+        <div class="features-img">
+            <img src='youtube channel.png'>
+        </div>
+        <img id="yt" src="yt logo.png" onclick="location.replace('https://www.youtube.com/channel/UCNMiMa07Is6QPG0dp6SPF1Q')">
+
+
+</div>
+</section>
+
+<!--My Artwork-->
+<section id="artwork">
+<div class="title-text">
+    <p>MY ARTWORK</p>
+    <h1>Made with the help of Blender</h1>
+    <div class="features-box">
+        <div class="blender-artworks">
+            <img src="blender_building artwork">
+        </div>
+        <div class="blender-artworks">
+            <img src="hammer artwork">
+         </div>
+        <div class="blender-artworks">
+            <img src="pickachu artwork .png">
+        </div>
+        <div class="blender-artworks">
+            <img src="room_final2.png">
+        </div>
+    </div>
+
+</div>
+</section>
+<!---footer--->
+<section id="footer">
+    <div class="title-text">
+        <p>Connect with me!</p>
+        <h1>My Social Handles</h1>
+    </div>
+
+    <div class="contact-buttons">
+        <div id="social_media_buttons">
+            <a id="hover_button" href="https://www.linkedin.com/in/satwikpandey/"><img style="height: 100%; width: 100%;" src="linkedin logo 4.png" alt="linkdin link"></a>
+        </div>
+        <div id="social_media_buttons">
+            <a id="hover_button" href="https://www.facebook.com/satwik.pandey.965"><img style="height: 100%; width: 100%;" src="facebook logo 4.png" alt="facebook link"></a>
+        </div>
+        <div id="social_media_buttons">
+            <a id="hover_button" href="https://www.instagram.com/satwikpandey_23/?utm_medium=copy_link"><img style="height: 100%; width: 100%;" src="insta logo 2.png" alt="insta link"></a>
+        </div>
+        <div id="social_media_buttons">
+            <a id="hover_button" href="https://github.com/TIlluop"><img style="height: 100%; width: 100%;" src="github logo 2.png" alt="github link"></a>
+        </div>
+        <div id="email_info" style="font-weight: bold;">
+            satwik2308@gmail.com
+        </div>
+    </div>
+
+</section>
+
+
+
+<script>
+var manuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+sideNav.style.right="-250px";
+
+menuBtn.onclick=function(){
+    if(sideNav.style.right=="-250px"){
+        sideNav.style.right="0";
+        menu.src="close.png";
+    }
+    else{
+        sideNav.style.right="-250px";
+        menu.src="menu.png";
+    }
+}
+
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+</script>
+
+</body>
+ </html>
